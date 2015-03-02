@@ -12,7 +12,7 @@ shinyServer(function(input,output){
   
   output$distPlot<-renderPlot({
     library(ggplot2);
-    N<-input$samples; prob<-input$prob;
+    N<-input$samples; prob<-input$Prob;
     sd<-sqrt((1/((1-prob)^4))*prob*(1-prob));
     gp<-prob/(1-prob);
     gmean<-rep(0,5000);
