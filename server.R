@@ -10,6 +10,10 @@ shinyServer(function(input,output){
   #     when inputs change
   #  2) Its output type is a plot
   
+  output$text1<-renderText({
+      "Simulation"
+    })
+  
   output$distPlot<-renderPlot({
     library(ggplot2);
     N<-input$samples; prob<-input$Prob;
