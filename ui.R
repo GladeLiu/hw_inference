@@ -26,7 +26,7 @@ shinyUI(fluidPage(
                 "Binwidth:",
                 min=0.5,
                 max=2,
-                value=0.1),
+                value=0.5),
     
     # Show a plot of the generated distribution
     mainPanel(
