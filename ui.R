@@ -19,8 +19,7 @@ shinyUI(fluidPage(
                   "Probability:",
                   min=0.1,
                   max=0.9,
-                  value=0.5)
-    ),
+                  value=0.5),
     
      # sliderInput("bins",
     #            "Binwidth:",
@@ -32,7 +31,8 @@ shinyUI(fluidPage(
                 "Alpha:",
                 min=0.1,
                 max=1,
-                value=0.7),
+                value=0.7)
+    ),
     
     # Show a plot of the generated distribution
     mainPanel(
