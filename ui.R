@@ -24,7 +24,7 @@ shinyUI(fluidPage(
     
       sliderInput("bins",
                 "Binwidth:",
-                min=0.5,
+                min=0.4,
                 max=2,
                 value=0.5),
     
