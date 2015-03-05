@@ -36,7 +36,8 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
-      textOutput("text1"),
+      h2("The Result of Simulation"),
+      h3("Histogram"),
       plotOutput("distPlot")
     )
   )

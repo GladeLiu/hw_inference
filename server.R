@@ -10,10 +10,9 @@ shinyServer(function(input,output){
   #     when inputs change
   #  2) Its output type is a plot
   
-  output$text1<-renderText({
-      h2("The Result of Simulation"),
-      h3("Histogram")
-    })
+ # output$text1<-renderText({
+
+  #  })
   
   output$distPlot<-renderPlot({
     library(ggplot2);
