@@ -21,11 +21,11 @@ shinyUI(fluidPage(
                   max=0.9,
                   value=0.5),
     
-     # sliderInput("bins",
-    #            "Binwidth:",
-     #           min=0.4,
-    #            max=2,
-    #            value=0.5),
+      sliderInput("bins",
+                 "Binwidth:",
+                 min=0.4,
+                 max=2,
+                 value=0.5),
     
       sliderInput("alpha",
                 "Alpha:",
