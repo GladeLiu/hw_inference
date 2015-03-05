@@ -4,7 +4,8 @@ library(shiny)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Delta Method"),
+  titlePanel(strong("Delta Method",align = "center"),
+             br()),
   
   # Sidebar with a slider input for the number of bins
   sidebarLayout(
