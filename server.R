@@ -13,6 +13,7 @@ shinyServer(function(input,output){
   output$distPlot<-renderPlot({
     library(ggplot2);
     N<-input$samples; prob<-input$Prob;
+    bin<-input$bins;
     sd<-sqrt((1/((1-prob)^4))*prob*(1-prob));
     gp<-prob/(1-prob);
     gmean<-rep(0,5000);
@@ -25,7 +26,7 @@ shinyServer(function(input,output){
     data<-data.frame(hist=hist);
     p<-ggplot(data,aes(hist))
     p+geom_histogram(position="identity",
-                     alpha=0.7,
+                     alpha=0.7,binwidth=bins,
                      aes(y=..density..,fill=..density..))+
       stat_density(geom="line",aes(colour="Density Estimation"))+
       stat_function(fun=dnorm,args=list(mean=0,sd=sd),aes(hist,colour="Normal Distribution"));
