@@ -26,7 +26,7 @@ shinyServer(function(input,output){
     data<-data.frame(hist=hist);
     p<-ggplot(data,aes(hist))
     p+geom_histogram(position="identity",
-                     alpha=0.7,binwidth=bins,
+                     alpha=0.7,
                      aes(y=..density..,fill=..density..))+
       stat_density(geom="line",aes(colour="Density Estimation"))+
       stat_function(fun=dnorm,args=list(mean=0,sd=sd),aes(hist,colour="Normal Distribution"));
