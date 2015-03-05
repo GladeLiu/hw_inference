@@ -11,7 +11,8 @@ shinyServer(function(input,output){
   #  2) Its output type is a plot
   
   output$text1<-renderText({
-      "Simulation"
+      h2("The Result of Simulation"),
+      h3("Histogram")
     })
   
   output$distPlot<-renderPlot({
