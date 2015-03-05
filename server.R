@@ -25,7 +25,7 @@ shinyServer(function(input,output){
     hist<-sqrt(N)*(gmean-gp);
     data<-data.frame(hist=hist);
     p<-ggplot(data,aes(hist))
-    p+geom_histogram(position="identity",
+    p+geom_histogram(#position="identity",
                      alpha=alpha,
                      aes(y=..density..,fill=..density..))+
       stat_density(geom="line",aes(colour="Density Estimation"))+
