@@ -22,11 +22,17 @@ shinyUI(fluidPage(
                   value=0.5)
     ),
     
-      sliderInput("bins",
-                "Binwidth:",
-                min=0.4,
-                max=2,
-                value=0.5),
+     # sliderInput("bins",
+    #            "Binwidth:",
+     #           min=0.4,
+    #            max=2,
+    #            value=0.5),
+    
+      sliderInput("alpha",
+                "Alpha:",
+                min=0.1,
+                max=1,
+                value=0.7),
     
     # Show a plot of the generated distribution
     mainPanel(
